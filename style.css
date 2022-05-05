@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #a09038;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+
+}
+
+.container {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px #a09038;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li a{
+    transition: 300ms;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+}
+
+body {
+    background-color: #fffdd0;
+}
+
+.container .name h1 {
+    font-size: 50px;
+}
+
+.container .name h5 {
+    font-size: 20px;
+}
+
+#arrow {
+    cursor: pointer;
+    font-size: 35px;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#animation {
+    transition: 300ms;
+}
+
+#about  p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #c5b65f;
+    color: white;
+    outline-style: none;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background-color: #fffdd0;
+    color: #a09038;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    margin-top: 10px;
+}
+
+.form button:hover{
+    background-color: #c5b65f;
+}
+
+main {
+    margin-top: 10%;
+}
